@@ -5,19 +5,3 @@ Basically, it asks for the user to select their favorite tracks from Spotify, th
 
 # The distance
 The general idea is to compare the difference between all the features of the inputted tracks against the features of each of the tracks in the dataset. To do this, we use euclidean distance.
-
-For example, if we had only 2 features (or dimensions) named 1 as the horizontal axis and 2 as the vertical axis, we could see the tracks as the points p and q and the distance between them in a plane like this:
-
-![Pythagoras](app/static/img/pythagoras.png)
-
-Or, if we had more dimensions n like in our case where n = 8:
-
-![Euclidean](app/static/img/euclidean_distance.png)
-
-Where p and q are the tracks and the subindexes (1, 2, ..., i, ..., n) are the features (acousticness, danceability, etc.)
-
-Then we normalize the similarity with the following index:
-
-![Similarity](app/static/img/similarity.png)
-
-and choose the track with similarity closest to 1.0 among the ones in the dataset.
